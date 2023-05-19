@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fraunces: 'Fraunces', serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --tittle: 35px;
+    --green: hsl(158, 36%, 37%);
+    --black: hsl(212, 21%, 14%);
+    --gray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --cream: hsl(30, 38%, 92%);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cream);
+    height: 100vh;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--white);
+    font-family: var(--montserrat);
+    color: var(--gray);
+    border-radius: 10px;
+    display: flex;
+}
+
+.card section {
+    width: 300px;
+    height: 450px;
+}
+
+.card .image img {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.card .container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .product {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.container .description {
+    line-height: 20px;
+}
+
+.container .value {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container h1, .new-price {
+    font-size: var(--tittle);
+    font-family: var(--fraunces);
+    color: var(--black);
+}
+
+.new-price {
+    color: var(--green);
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.btn {
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--black);
+}
+
+.btn img {
+    margin-right: 10px;
+}
